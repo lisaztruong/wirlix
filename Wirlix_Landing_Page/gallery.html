@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type="text/css" href="styles.css" />
+        <script type="text/javascript" src="wirlix_util.js"></script>
+        <script type="text/javascript" src="wirlix_ajax.js"></script>
+        <!-- marquee -->
+        <script type="text/javascript" src="crawler.js"></script>
+
+    </head>
+
+    <!-- Main Page -->
+    <div id="wirlixpage">
+        <!-- Header Content -->
+        <header>
+            <div id="clockbox" class="clock"></div>
+
+            <!-- start marquee -->
+            <div id="maindiv">
+
+              <div class="marquee" id="mycrawler">
+                You become responsible, forever, for what you have tamed ***
+                You're beautiful, but you're empty. No one could die for you ***
+                The thing that is important is the thing that is not seen ***
+                You know one loves the sunset, when one is so sad ***
+                It is such a mysterious place, the land of tears ***
+                But eyes are blind. You have to look with the heart ***
+                You - you alone will have the stars as no one else has them... ***
+              </div>
+
+              <script type="text/javascript">
+              marqueeInit({
+              	uniqueid: 'mycrawler',
+              	style: {
+              		'padding': '5px',
+              		// 'width': 100,
+              		// 'background': 'lightyellow',
+              		// 'border': '1px solid #CC3300'
+              	},
+              	inc: 5, //speed - pixel increment for each iteration of this marquee's movement
+              	mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+              	moveatleast: 2,
+              	neutral: 150,
+              	persist: true,
+              	savedirection: true
+              });
+              </script>
+
+            </div>
+            <!-- end marquee -->
+            <br>
+            <div class = "container">
+              <nav>
+                  <div class = "textinnavbar">
+                     <h2>GALLERY</h2>
+                     <h3>"Spark controversy"</h3>
+                     <img src="gem.png">
+                  </div>
+              </nav>
+            </div>
+        </header>
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  </article>
+
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

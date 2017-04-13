@@ -1,0 +1,180 @@
+/*hover buttons*/
+
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
+body { font-family: "Nunito", sans-serif; font-size: 24px; }
+a    { text-decoration: none; }
+p    { text-align: center; }
+sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
+
+.button
+{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #0C5;
+
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+
+  margin: 5em auto;
+
+  position: absolute;
+  top:0; right:0; bottom:0; left:0;
+
+  padding: 20px 0;
+  width: 220px;
+  height:30px;
+
+  background: #0D6;
+  border: 1px solid #0D6;
+  color: #FFF;
+  overflow: hidden;
+
+  transition: all 0.5s;
+}
+
+.button:hover, .button:active
+{
+  text-decoration: none;
+  color: #0C5;
+  border-color: #0C5;
+  background: #FFF;
+}
+
+.button span
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+
+  transition: padding-right 0.5s;
+}
+
+.button span:after
+{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+
+/*hover buttons end*/
+
+
+/*inifinte marquee 1*/
+#maindiv{
+  border: 2px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/*end infinite marquee */
+
+/*marquee and time div*/
+.head-left{
+display: inline-block
+}
+.head-right{
+display: inline-block
+}
+/*end marquee and time div*/
+
+/*logo and time div*/
+.logo-time{
+text-align: center;
+}
+/*end logo and time div*/
+
+/*lisa text*/
+lisa{
+  padding: 0;
+  display: block;
+  margin-bottom: 5px;
+}
+/*end lisa text*/
+
+/*logo text*/
+logo{
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-weight: bold;
+  font-size: 52px;
+}
+/*end logo text*/
+
+body{
+  background-color: #eef0f2
+}
+
+/*start vid box*/
+.vid-box{
+  margin: 0 auto;
+  width: 560px;}
+/*end vid box*/
+
+/*button start*/
+.row {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 2px;
+  border: none;
+  height: 45px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.lg {
+  width: 46%;
+}
+
+.md {
+  width: 15%;
+}
+
+.ghost {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  transition: .2s ease;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+.ghost:hover {
+  background-color: black;
+  color: white;
+  transition: .2s ease;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+}
+
+@media (max-width: 480px) {
+  .md {
+    width: 50%;
+  }
+
+  .lg {
+    width: 90%;
+  }
+}
+/*button end*/
